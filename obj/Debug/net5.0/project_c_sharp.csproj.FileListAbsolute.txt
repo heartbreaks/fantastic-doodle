@@ -1,0 +1,16 @@
+D:\Projects\project_c_sharp\bin\Debug\net5.0\project_c_sharp.exe
+D:\Projects\project_c_sharp\bin\Debug\net5.0\project_c_sharp.deps.json
+D:\Projects\project_c_sharp\bin\Debug\net5.0\project_c_sharp.runtimeconfig.json
+D:\Projects\project_c_sharp\bin\Debug\net5.0\project_c_sharp.runtimeconfig.dev.json
+D:\Projects\project_c_sharp\bin\Debug\net5.0\project_c_sharp.dll
+D:\Projects\project_c_sharp\bin\Debug\net5.0\ref\project_c_sharp.dll
+D:\Projects\project_c_sharp\bin\Debug\net5.0\project_c_sharp.pdb
+D:\Projects\project_c_sharp\obj\Debug\net5.0\project_c_sharp.csproj.AssemblyReference.cache
+D:\Projects\project_c_sharp\obj\Debug\net5.0\project_c_sharp.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\project_c_sharp\obj\Debug\net5.0\project_c_sharp.AssemblyInfoInputs.cache
+D:\Projects\project_c_sharp\obj\Debug\net5.0\project_c_sharp.AssemblyInfo.cs
+D:\Projects\project_c_sharp\obj\Debug\net5.0\project_c_sharp.csproj.CoreCompileInputs.cache
+D:\Projects\project_c_sharp\obj\Debug\net5.0\project_c_sharp.dll
+D:\Projects\project_c_sharp\obj\Debug\net5.0\ref\project_c_sharp.dll
+D:\Projects\project_c_sharp\obj\Debug\net5.0\project_c_sharp.pdb
+D:\Projects\project_c_sharp\obj\Debug\net5.0\project_c_sharp.genruntimeconfig.cache
