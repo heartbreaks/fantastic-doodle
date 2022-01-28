@@ -56,6 +56,20 @@ namespace project_c_sharp
             
             Console.WriteLine(visualEffect);
 
+
+            var visualEffect2 = "";
+            var filteredJagArr = jag_arr.Where((num, index) => index % 2 == 1).ToArray();
+            for (int row = 0; row < filteredJagArr.Length; row++)
+            {
+                visualEffect2 += $"#{row}: ";
+                for (int tab = 0; tab < filteredJagArr[row].Length; tab++)
+                {
+                    visualEffect2 += $"{filteredJagArr[row][tab]} ";
+                }
+                visualEffect2 += "\n";
+            } 
+            
+            Console.WriteLine(visualEffect2);
         }
 
         public static int[,] AddColumns(int[,] currentMatrix, int columns)
