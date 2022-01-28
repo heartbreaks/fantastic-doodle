@@ -106,12 +106,12 @@ namespace project_c_sharp
         public static void Start()
         {
             Console.WriteLine("---------------- Лаба 2 ----------------");
-            Console.WriteLine("---------------- Задание 1 -------------");
-            MinAndMaxValues();
+            // Console.WriteLine("---------------- Задание 1 -------------");
+            // MinAndMaxValues();
             
-            Console.WriteLine("---------------- Задание 2 -------------");
-            GetMaxValue();
-            
+            // Console.WriteLine("---------------- Задание 2 -------------");
+            // GetMaxValue();
+            //
             Console.WriteLine("---------------- Задание 3 -------------");
             Console.WriteLine(isPowerOfThree() ? "Является степенью 3" : "Не является степенью 3");
             
@@ -190,15 +190,27 @@ namespace project_c_sharp
             Console.WriteLine($"Index of min value: {maxValueIndex} (or human number {maxValueIndex + 1}), him value is: {minValue}");
         }
         
+        public static float GetInfo(string text)
+        {
+            float value;
+            Console.Write(text);
+            if (!float.TryParse(Console.ReadLine(), out value))
+            {
+                Console.WriteLine("Попробуй снова");
+                return GetInfo(text);
+            }
+            
+            return value;
+        }
+        
         public static bool isPowerOfThree()
         {
-            Console.Write("Введите число K: ");
-            int valueK = int.Parse(Console.ReadLine());
-            Console.Write("Введите число N: ");
-            int valueN = int.Parse(Console.ReadLine());
-            if (valueK == Math.Pow(3, valueN))
+            float valueK = GetInfo("Введите число K: ");
+            if (valueK < 3) return false;
+            while (valueK > 1)
             {
-                return true;
+                valueK = valueK / 3;
+                if (valueK == 1) return true;
             }
             return false;
         }
