@@ -20,19 +20,41 @@ namespace project_c_sharp
             
             // Zadanie 2, 10 Var
 
-            Int32[,] m2x2 = new int[2, 2];
-            var matrix = "";
-            for (int row = 0; row < 2; row++)
+            // Int32[,] m2x2 = new int[2, 2];
+            // var matrix = "";
+            // for (int row = 0; row < 2; row++)
+            // {
+            //     for (int col = 0; col < 2; col++)
+            //     {
+            //         m2x2[row, col] = GetInfo($"Введите значение для адреса {row} {col}: ");
+            //         matrix += $"{m2x2[row, col].ToString()} ";
+            //     }
+            //     matrix += '\n';
+            // }
+            // Console.WriteLine(matrix);
+            // AddColumns(m2x2, GetInfo("Сколько столбцов добавить?: "));
+            
+            // Zadanie 3, 10 Var
+            
+            var length = GetInfo("Введите количество строк: "); 
+            Random rnd = new Random();
+            int[][] jag_arr = new int[length][];
+            var visualEffect = "";
+            for (int row = 0; row < length; row++)
             {
-                for (int col = 0; col < 2; col++)
+                visualEffect += $"#{row}: ";
+                
+                var columns = GetInfo("Введите количество столбцов: ");
+                jag_arr[row] = new int[columns];
+                for (int tab = 0; tab < columns; tab++)
                 {
-                    m2x2[row, col] = GetInfo($"Введите значение для адреса {row} {col}: ");
-                    matrix += $"{m2x2[row, col].ToString()} ";
+                    jag_arr[row][tab] = rnd.Next(0, 10);
+                    visualEffect += $"{jag_arr[row][tab]} ";
                 }
-                matrix += '\n';
-            }
-            Console.WriteLine(matrix);
-            AddColumns(m2x2, GetInfo("Сколько столбцов добавить?: "));
+                visualEffect += "\n";
+            } 
+            
+            Console.WriteLine(visualEffect);
 
         }
 
